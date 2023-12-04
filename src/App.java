@@ -16,18 +16,18 @@ public class App {
     }
     static boolean siffra (char tecken3)
     {
-        char B = '2';
+        char B = 'b';
         boolean svar = Character.isDigit(B);
-        boolean svar2 = Character.isAlphabetic(B);
+        
         if (svar==true) {
-            System.out.println(B+"är en siffra");
-            
+            System.out.println(B+" är en siffra");
+            return true;
         }
-        else if (svar2== true) {
-            System.out.println(B+"är en bokstav");
-            
+        else if (svar!=true) {
+            System.out.println(B+" är en bokstav");
+            return false;
         }
-        return true;
+        return false;
     }
     static char tecken(int i)
     {
